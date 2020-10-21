@@ -4,8 +4,30 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <style>
+            body{
+                  background-color: lightblue;
+            }
+            #rond{
+                  position: absolute;
+                  background-color: white;
+                  left: 45%;
+                  top:45%;
+                  border-radius: 50%;
+                  height: 50px;
+                  width: 50px;
+            }
+            .couleur{
+                  background-color: blue !important;
+            }
+      </style>
 </head>
 <body>
-      
+      <div id="rond" onclick="anim()"></div>
 </body>
+<script>
+      function anim(){
+            document.getElementById("rond").classList.toggle("couleur");
+      }
+</script>
 </html>
